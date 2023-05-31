@@ -1,0 +1,41 @@
+.selected_audio::-webkit-media-controls-play-button {
+    background-color: #2f20b6;
+    border-radius: 50%;
+}
+.selected_audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(226, 236, 240, 0.7);
+}
+.selected_audio::-webkit-media-controls-panel {
+    background-color: #fff;
+}
+
+.wrapper.deleteActive {
+    filter: blur(5px); 
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 100;
+}
+
+#popup.deleteActive {
+    top: 50%;
+    visibility: visible;
+    opacity: 10;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 640px){
+    .book-grid{
+        width: 100%;
+    }
+    
+}

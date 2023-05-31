@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/output.css">
+      <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class=" overflow-hidden">
+        <div class="sidebar">
+            <div class="logo-details">
+              <box-icon type='logo' color="white" name='deezer'></box-icon>
+                <div class="logo_name mx-2">DoodleRam</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+            <ul class="nav-list">
+              <li>
+                  <i class='bx bx-search' ></i>
+                <input type="search" placeholder="Search...">
+                <span class="tooltip">Search</span>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+              </li> -->
+              <li>
+              <a href="#">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">User</span>
+              </a>
+              <span class="tooltip">User</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-book-content' ></i>
+                <span class="links_name">Books</span>
+              </a>
+              <span class="tooltip">Books</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bxs-music' ></i>
+                <span class="links_name">songs</span>
+              </a>
+              <span class="tooltip">Songs</span>
+            </li>
+            </ul>
+        </div>
+        <section class="home-section">
+          <div class="hidden md:block m-5 px-20 absolute z-10 sm:flex items-center bg-transparent w-full">
+            <header class="text-gray-100 body-font w-full">
+              <div class="container mx-auto md:flex md:justify-between p-5 items-center">
+                <a href="/" class="flex title-font font-medium items-center text-gray-100 mb-4 md:mb-0">
+                  <span class="ml-3 text-3xl">DoodleRam</span>
+                </a>
+                <!-- <nav class="md:ml-auto flex flex-wrap items-center text-base">
+                  <a href="./pages/artiste_authors.html" class="hidden md:block text-2xl font-bold mr-5 hover:text-gray-900">Artiste</a>
+                  <a href="./pages/artiste_authors.html" class="hidden md:block text-2xl font-bold mr-5 hover:text-gray-900">Authors</a>
+                </nav> -->
+              </div>
+            </header>
+          </div>
+
+            <div style="background-image: linear-gradient(
+                rgba(4, 25, 88, 0.603), 
+                rgba(20, 6, 143, 0.596)
+                ), url('img/music1.jpg'); background-position: center;">
+                    <!-- Login Form -->
+                <div class="container mx-auto p-2">
+                    <div class="max-w-lg mx-auto my-24 mt-32 bg-white px-5 py-28 rounded shadow-xl">
+                        <div class="text-center mb-8">
+                            <h1 class="font-bold text-3xl text-gray-700">Login To DoodleRam</h1>
+                        </div>
+                        <form action="/login" method="post">
+                            <div class="mt-5">
+                            <label for="username">Serial number</label>
+                            <input
+                                type="text"
+                                id="username"
+                                class="block w-full p-2 border rounded border-gray-500" name="username"
+                            />
+                            </div>
+                            <div class="mt-5">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="block w-full p-2 border rounded border-gray-500"
+                            />
+                            </div>
+                            <div class="mt-10">
+                            <input
+                                type="submit"
+                                value="Login"
+                                class="py-3 bg-blue-800 hover:bg-blue-900 rounded text-white text-center w-full"
+                            />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>                
+            <footer class="text-gray-600 body-font mt-40 bg-white">
+              <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                  <a href="/" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <span class="ml-3 text-xl">DoodleRam</span>
+                  </a>
+                  <p class="mt-2 text-sm mx-6 text-gray-500">Get amazing tunes and books here on DoodleRam</p>
+                </div>
+                <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                  <div class="lg:w-1/2 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">QUICK LINKS</h2>
+                    <nav class="list-none mb-10 space-y-5">
+                      <li>
+                        <a href="/" class="text-gray-600 hover:text-gray-800">Home</a>
+                      </li>
+                      <li>
+                        <a href="/books" class="text-gray-600 hover:text-gray-800">Books</a>
+                      </li>
+                      <li>
+                        <a href="#songs" class="text-gray-600 hover:text-gray-800">Songs</a>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="lg:w-1/2 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">MORE LINKS</h2>
+                    <nav class="list-none mb-10 space-y-5">
+                      <li>
+                        <a href="/login" class="text-gray-600 hover:text-gray-800">Amin</a>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-100">
+                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                  <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 De-General —
+                    <a href="https://twitter.com/thats_nkay?s=09" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@De-General</a>
+                  </p>
+                  <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </footer>
+        </section>
+
+    </div>
+</body>
+<script src="js/jsfile.js"></script>
+<script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</html>
